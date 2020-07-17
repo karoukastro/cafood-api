@@ -23,7 +23,7 @@ public class Cozinha {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@JsonProperty("Nome da Cozinha")
+	//@JsonProperty("Nome da Cozinha")
 	@Column(nullable = false)
 	private String nome;
 
