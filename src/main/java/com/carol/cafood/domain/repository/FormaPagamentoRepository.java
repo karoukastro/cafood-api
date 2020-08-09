@@ -2,14 +2,13 @@ package com.carol.cafood.domain.repository;
 
 import java.util.List;
 
+import org.springframework.data.jpa.repository.JpaRepository;
+
 import com.carol.cafood.domain.model.FormaPagamento;
+import com.carol.cafood.domain.model.Restaurante;
 
-public interface FormaPagamentoRepository {
+public interface FormaPagamentoRepository extends JpaRepository<FormaPagamento, Long> {
 
-	List<FormaPagamento> listar();
-	FormaPagamento buscar(Long id);
-	FormaPagamento salvar(FormaPagamento formaPagamento);
-	void remover(FormaPagamento formaPagamento);
 	
 }
 
